@@ -56,7 +56,9 @@ function nextLevel(event) {
     score.innerHTML = "20 Amazing";
   } else if (parseInt(score.innerHTML) === 30) {
     score.innerHTML = "30 Legendary";
-  } else if (parseInt(score.innerHTML) >= 36) {
+  } else if (parseInt(score.innerHTML) >= 36 && parseInt(score.innerHTML) < 40) {
     score.innerHTML = `${score.innerHTML} UNSTOPPABLE`;
+  } else if (parseInt(score.innerHTML) === 40) {
+    score.innerHTML = `${score.innerHTML} Where is it? 🤨`;
   }
 }
